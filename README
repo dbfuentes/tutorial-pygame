@@ -3,6 +3,9 @@ crear videojuegos con pygame, que estoy escribiendo en el blog:
 
 http://pythonmania.wordpress.com/2010/03/23/tutorial-pygame-introduccion/
 
+Los ejemplos están bajo la licencia X11/MIT, ver el archivo COPYING
+para mayor detalle.
+
 Cuando tenga más tiempo (y el tutorial este avanzado) voy a generar
 algún pdf (o similar) con las explicaciones para cada ejemplo.
 Mientras tanto esta disponible el código fuente de lo avanzado hasta
