@@ -3,7 +3,7 @@
 
 # Escrito por Daniel Fuentes B.
 # Licencia: X11/MIT license http://www.opensource.org/licenses/mit-license.php
-# http://pythonmania.wordpress.com/2010/03/25/tutorial-pygame-2-ventana-e-imagenes/
+# https://www.pythonmania.net/es/2010/03/25/tutorial-pygame-2-ventana-e-imagenes/
 
 # ---------------------------
 # Importacion de los módulos

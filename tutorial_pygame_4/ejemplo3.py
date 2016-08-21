@@ -3,7 +3,7 @@
 
 # Escrito por Daniel Fuentes B.
 # Licencia: X11/MIT license http://www.opensource.org/licenses/mit-license.php
-# http://pythonmania.wordpress.com/2010/07/14/tutorial-pygame-4-figuras-y-texto
+# https://www.pythonmania.net/es/2010/07/14/tutorial-pygame-4-figuras-y-texto
 
 # ---------------------------
 # Importación de los módulos
@@ -41,7 +41,7 @@ class Proyectil(pygame.sprite.Sprite):
     def update(self):
         "actualizar la posición del proyectil"
 
-        if self.disparar == True:
+        if self.disparar is True:
             # esta en movimiento, hay que actualizar la posición
             pass
         else:

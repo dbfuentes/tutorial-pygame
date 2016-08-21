@@ -3,7 +3,7 @@
 
 # Escrito por Daniel Fuentes B.
 # Licencia: X11/MIT license http://www.opensource.org/licenses/mit-license.php
-# http://pythonmania.wordpress.com/2010/07/14/tutorial-pygame-4-figuras-y-texto
+# https://www.pythonmania.net/es/2010/07/14/tutorial-pygame-4-figuras-y-texto
 
 # ---------------------------
 # Importación de los módulos
@@ -27,7 +27,7 @@ HEIGHT = 480
 
 
 class Proyectil(pygame.sprite.Sprite):
-    "Clase que representa el proyectil lanzado"
+    """Clase que representa el proyectil lanzado"""
 
     def __init__(self, x, y):
         self.angulo = 45
@@ -44,11 +44,11 @@ class Proyectil(pygame.sprite.Sprite):
         self.velocx = self.veloc * math.cos(math.radians(self.angulo))
         self.velocy = self.veloc * math.sin(math.radians(self.angulo))
 
-        if self.disparar == True:
+        if self.disparar is True:
             # esta en movimiento, hay que actualizar la posición
             self.xreal = (0 + self.velocx * self.tiempo)
             self.yreal = (0 + self.velocy * self.tiempo +
-                (-9.8 * (self.tiempo ** 2)) / 2)
+                          (-9.8 * (self.tiempo ** 2)) / 2)
             # Corregir la posición en el eje vertical
             self.x = self.xreal
             self.y = HEIGHT - self.yreal
@@ -93,23 +93,23 @@ def main():
                 sys.exit()
             elif event.type == pygame.KEYDOWN:
                 if event.key == K_UP:
-                    if bala.angulo < 90 and bala.disparar == False:
+                    if bala.angulo < 90 and bala.disparar is False:
                         bala.angulo = bala.angulo + 1
                 elif event.key == K_DOWN:
-                    if bala.angulo > 0 and bala.disparar == False:
+                    if bala.angulo > 0 and bala.disparar is False:
                         bala.angulo = bala.angulo - 1
                 elif event.key == K_RIGHT:
-                    if bala.veloc < 100 and bala.disparar == False:
+                    if bala.veloc < 100 and bala.disparar is False:
                         bala.veloc = bala.veloc + 1
                 elif event.key == K_LEFT:
-                    if bala.veloc > 10 and bala.disparar == False:
+                    if bala.veloc > 10 and bala.disparar is False:
                         bala.veloc = bala.veloc - 1
                 elif event.key == K_SPACE:
                     bala.disparar = True
                 elif event.key == K_ESCAPE:
                     sys.exit()
 
-        if bala.disparar == True:
+        if bala.disparar is True:
             # al tiempo anterior le sumamos lo transcurrido
             bala.tiempo = bala.tiempo + (tick / 1000.0)
 

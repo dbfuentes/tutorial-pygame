@@ -3,7 +3,7 @@
 
 # Escrito por Daniel Fuentes B.
 # Licencia: X11/MIT license http://www.opensource.org/licenses/mit-license.php
-# http://pythonmania.wordpress.com/2010/04/07/tutorial-pygame-3-un-videojuego/
+# https://www.pythonmania.net/es/2010/04/07/tutorial-pygame-3-un-videojuego/
 
 # ---------------------------
 # Importacion de los módulos
@@ -33,10 +33,10 @@ def load_image(nombre, dir_imagen, alpha=False):
     try:
         image = pygame.image.load(ruta)
     except:
-        print "Error, no se puede cargar la imagen: ", ruta
+        print("Error, no se puede cargar la imagen: " + ruta)
         sys.exit(1)
     # Comprobar si la imagen tiene "canal alpha" (como los png)
-    if alpha == True:
+    if alpha is True:
         image = image.convert_alpha()
     else:
         image = image.convert()
